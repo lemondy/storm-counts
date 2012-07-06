@@ -51,7 +51,7 @@ public class BetaBinomialDistribution extends AbstractBayesianDistribution {
     // We don't actually have to sample the probability and then
     // sample the binomial since with only one sample, sampling directly from a binomial
     // with probability $\alpha / (\alpha + \beta)$ is just the same.
-    return gen.nextDouble() < bd.getBeta() ? 1 : 0;
+    return gen.nextDouble() < bd.getAlpha() / (bd.getAlpha() + bd.getBeta()) ? 1 : 0;
   }
 
   @Override
