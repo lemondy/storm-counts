@@ -17,3 +17,6 @@ beta-Bayesian model.
 
 The BetaWalk implements a random walk that has assymptotic beta distribution.  This is useful for
 modeling conversion probabilities that vary in time but which have realistic distribution.
+
+#### Webpage
+http://tdunning.blogspot.jp/2012/02/bayesian-bandits.html
